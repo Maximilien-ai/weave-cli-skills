@@ -1,7 +1,7 @@
 ---
 name: weave-planner
 description: "Plan and orchestrate end-to-end RAG solutions using weave-cli. Use when: (1) gathering user requirements for a RAG project, (2) designing the solution architecture (VDB, embeddings, agents, evals), (3) creating execution plans across multiple agents, (4) coordinating the RAG lifecycle from setup through production, (5) recommending improvements after eval results. This is the orchestrator skill — it coordinates work across weave-setup, weave-ingest, weave-search, weave-eval, and weave-stack."
-homepage: https://github.com/maximilien/weave-cli
+homepage: https://github.com/Maximilien-ai/weave-cli
 tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
@@ -14,14 +14,14 @@ metadata:
             {
               "id": "brew",
               "kind": "brew",
-              "formula": "maximilien/tap/weave-cli",
+              "formula": "Maximilien-ai/tap/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (brew)"
             },
             {
               "id": "go",
               "kind": "go",
-              "package": "github.com/maximilien/weave-cli",
+              "package": "github.com/Maximilien-ai/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (go install)"
             }

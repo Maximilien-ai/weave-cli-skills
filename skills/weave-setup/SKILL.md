@@ -1,7 +1,7 @@
 ---
 name: weave-setup
 description: "Set up and configure weave-cli for vector database RAG solutions. Use when: (1) installing or updating weave-cli, (2) creating or updating config.yaml and .env files, (3) running weave doctor diagnostics, (4) selecting and configuring vector databases, (5) verifying health of VDB connections. NOT for: data ingestion (use weave-ingest), querying (use weave-search), evaluations (use weave-eval), or stack deployment (use weave-stack)."
-homepage: https://github.com/maximilien/weave-cli
+homepage: https://github.com/Maximilien-ai/weave-cli
 tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
@@ -14,14 +14,14 @@ metadata:
             {
               "id": "brew",
               "kind": "brew",
-              "formula": "maximilien/tap/weave-cli",
+              "formula": "Maximilien-ai/tap/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (brew)"
             },
             {
               "id": "go",
               "kind": "go",
-              "package": "github.com/maximilien/weave-cli",
+              "package": "github.com/Maximilien-ai/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (go install)"
             }
@@ -54,7 +54,7 @@ Set up and configure weave-cli for building multimodal RAG solutions across 10 v
 
 ```bash
 # Clone and build from source
-git clone https://github.com/maximilien/weave-cli.git
+git clone https://github.com/Maximilien-ai/weave-cli.git
 cd weave-cli && ./build.sh
 # Binary at: bin/weave
 

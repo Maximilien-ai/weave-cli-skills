@@ -1,7 +1,7 @@
 ---
 name: weave-ingest
 description: "Ingest data into vector databases using weave-cli. Use when: (1) creating collections and schemas, (2) ingesting documents (PDF, text, images), (3) batch pipeline ingestion with workers, (4) getting AI schema/chunking suggestions, (5) backing up and restoring collections. NOT for: initial setup (use weave-setup), querying data (use weave-search), evaluations (use weave-eval), or deployment (use weave-stack)."
-homepage: https://github.com/maximilien/weave-cli
+homepage: https://github.com/Maximilien-ai/weave-cli
 tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
@@ -14,14 +14,14 @@ metadata:
             {
               "id": "brew",
               "kind": "brew",
-              "formula": "maximilien/tap/weave-cli",
+              "formula": "Maximilien-ai/tap/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (brew)"
             },
             {
               "id": "go",
               "kind": "go",
-              "package": "github.com/maximilien/weave-cli",
+              "package": "github.com/Maximilien-ai/weave-cli",
               "bins": ["weave"],
               "label": "Install weave-cli (go install)"
             }
