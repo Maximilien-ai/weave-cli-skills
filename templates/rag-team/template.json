@@ -124,7 +124,7 @@
     {
       "id": "rag-setup",
       "name": "RAG Setup",
-      "schedule": "",
+      "schedule": "manual",
       "enabled": false,
       "targeting": {
         "tags": ["planner"]
@@ -135,7 +135,7 @@
     {
       "id": "data-pipeline",
       "name": "Data Pipeline",
-      "schedule": "",
+      "schedule": "manual",
       "enabled": false,
       "targeting": {
         "tags": ["data"]
@@ -146,7 +146,7 @@
     {
       "id": "search-tuning",
       "name": "Search Tuning",
-      "schedule": "",
+      "schedule": "manual",
       "enabled": false,
       "targeting": {
         "tags": ["search"]
@@ -157,7 +157,7 @@
     {
       "id": "eval-cycle",
       "name": "Eval Cycle",
-      "schedule": "",
+      "schedule": "manual",
       "enabled": false,
       "targeting": {
         "tags": ["eval"]
@@ -168,7 +168,7 @@
     {
       "id": "deploy",
       "name": "Deploy",
-      "schedule": "",
+      "schedule": "manual",
       "enabled": false,
       "targeting": {
         "tags": ["ops"]
