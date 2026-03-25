@@ -12,14 +12,21 @@ metadata:
         "install":
           [
             {
+              "id": "brew",
+              "kind": "brew",
+              "formula": "maximilien/tap/weave-cli",
+              "bins": ["weave"],
+              "label": "Install weave-cli (brew)"
+            },
+            {
               "id": "go",
               "kind": "go",
               "package": "github.com/maximilien/weave-cli",
               "bins": ["weave"],
-              "label": "Install weave-cli (go install)",
-            },
-          ],
-      },
+              "label": "Install weave-cli (go install)"
+            }
+          ]
+      }
   }
 ---
 
