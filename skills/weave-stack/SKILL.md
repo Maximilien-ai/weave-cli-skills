@@ -2,6 +2,7 @@
 name: weave-stack
 description: "Deploy and operate RAG infrastructure using weave-cli stacks. Use when: (1) initializing weave-stack.yaml for k8s or podman, (2) deploying VDB + ingestion + dashboard, (3) monitoring stack health, (4) day-2 operations (backup, scaling, security), (5) managing the weave dashboard UI. NOT for: initial setup (use weave-setup), data ingestion (use weave-ingest), querying (use weave-search), or evaluations (use weave-eval)."
 homepage: https://github.com/maximilien/weave-cli
+tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
     "openclaw":

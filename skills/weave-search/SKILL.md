@@ -2,6 +2,7 @@
 name: weave-search
 description: "Query vector databases and manage AI agents using weave-cli. Use when: (1) running semantic, BM25, or hybrid searches, (2) creating and configuring RAG/QA/summarize agents, (3) comparing embedding models, (4) re-embedding collections, (5) tuning search parameters. NOT for: initial setup (use weave-setup), data ingestion (use weave-ingest), evaluations (use weave-eval), or deployment (use weave-stack)."
 homepage: https://github.com/maximilien/weave-cli
+tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
     "openclaw":

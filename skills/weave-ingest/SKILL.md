@@ -2,6 +2,7 @@
 name: weave-ingest
 description: "Ingest data into vector databases using weave-cli. Use when: (1) creating collections and schemas, (2) ingesting documents (PDF, text, images), (3) batch pipeline ingestion with workers, (4) getting AI schema/chunking suggestions, (5) backing up and restoring collections. NOT for: initial setup (use weave-setup), querying data (use weave-search), evaluations (use weave-eval), or deployment (use weave-stack)."
 homepage: https://github.com/maximilien/weave-cli
+tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
     "openclaw":

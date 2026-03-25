@@ -2,6 +2,7 @@
 name: weave-setup
 description: "Set up and configure weave-cli for vector database RAG solutions. Use when: (1) installing or updating weave-cli, (2) creating or updating config.yaml and .env files, (3) running weave doctor diagnostics, (4) selecting and configuring vector databases, (5) verifying health of VDB connections. NOT for: data ingestion (use weave-ingest), querying (use weave-search), evaluations (use weave-eval), or stack deployment (use weave-stack)."
 homepage: https://github.com/maximilien/weave-cli
+tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
     "openclaw":

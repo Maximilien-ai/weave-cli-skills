@@ -2,6 +2,7 @@
 name: weave-eval
 description: "Evaluate and benchmark RAG solutions using weave-cli. Use when: (1) creating evaluation datasets, (2) running evals against agents, (3) benchmarking multiple agents, (4) creating custom evaluators (LLM judge or human), (5) analyzing eval results and recommending improvements. NOT for: initial setup (use weave-setup), data ingestion (use weave-ingest), querying (use weave-search), or deployment (use weave-stack)."
 homepage: https://github.com/maximilien/weave-cli
+tags: ["rag", "data", "weave", "vector-database"]
 metadata:
   {
     "openclaw":
