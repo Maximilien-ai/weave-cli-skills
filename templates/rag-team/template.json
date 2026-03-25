@@ -1,0 +1,191 @@
+{
+  "name": "RAG Team",
+  "type": "organization",
+  "version": "1.0.0",
+  "description": "A multiagent team that builds end-to-end RAG solutions using weave-cli. Includes planner, data engineers, search engineers, eval engineers, and ops engineers working in parallel workflows across 10 vector databases.",
+  "author": "ClawMax Team",
+  "tags": ["rag", "weave-cli", "vector-database", "ai", "multiagent"],
+  "parameters": [
+    {
+      "agentId": "data-engineer",
+      "label": "Number of Data Engineers",
+      "default": 2,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "agentId": "search-engineer",
+      "label": "Number of Search Engineers",
+      "default": 1,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "agentId": "eval-engineer",
+      "label": "Number of Eval Engineers",
+      "default": 1,
+      "min": 1,
+      "max": 5
+    }
+  ],
+  "agents": [
+    {
+      "id": "planner",
+      "name": "RAG Planner",
+      "role": "Solution Architect",
+      "tags": ["planner", "lead"],
+      "skills": ["weave-planner", "weave-setup"],
+      "communities": ["RAG Team"],
+      "groups": ["Planning", "Status"]
+    },
+    {
+      "id": "data-engineer",
+      "name": "Data Engineer",
+      "role": "Data Ingestion Specialist",
+      "tags": ["data", "ingest"],
+      "skills": ["weave-ingest"],
+      "communities": ["RAG Team"],
+      "groups": ["Data Pipeline", "Status"]
+    },
+    {
+      "id": "search-engineer",
+      "name": "Search Engineer",
+      "role": "Search & Agent Tuning Specialist",
+      "tags": ["search", "qa"],
+      "skills": ["weave-search"],
+      "communities": ["RAG Team"],
+      "groups": ["Search & QA", "Status"]
+    },
+    {
+      "id": "eval-engineer",
+      "name": "Eval Engineer",
+      "role": "Quality & Evaluation Specialist",
+      "tags": ["eval", "quality"],
+      "skills": ["weave-eval"],
+      "communities": ["RAG Team"],
+      "groups": ["Quality", "Status"]
+    },
+    {
+      "id": "ops-engineer",
+      "name": "Ops Engineer",
+      "role": "Infrastructure & Deployment Specialist",
+      "tags": ["ops", "infra"],
+      "skills": ["weave-stack"],
+      "communities": ["RAG Team"],
+      "groups": ["Ops", "Status"]
+    }
+  ],
+  "communities": [
+    {
+      "name": "RAG Team",
+      "description": "Multiagent team building RAG solutions with weave-cli",
+      "channels": []
+    }
+  ],
+  "groups": [
+    {
+      "name": "Planning",
+      "community": "RAG Team",
+      "description": "Requirements gathering, architecture design, lifecycle coordination",
+      "channels": []
+    },
+    {
+      "name": "Data Pipeline",
+      "community": "RAG Team",
+      "description": "Collection creation, schema design, data ingestion, backup",
+      "channels": []
+    },
+    {
+      "name": "Search & QA",
+      "community": "RAG Team",
+      "description": "Query tuning, agent configuration, embedding comparison",
+      "channels": []
+    },
+    {
+      "name": "Quality",
+      "community": "RAG Team",
+      "description": "Eval datasets, benchmarks, quality gates, iteration recommendations",
+      "channels": []
+    },
+    {
+      "name": "Ops",
+      "community": "RAG Team",
+      "description": "Stack deployment, monitoring, day-2 operations",
+      "channels": []
+    },
+    {
+      "name": "Status",
+      "community": "RAG Team",
+      "description": "Cross-team status updates and coordination",
+      "channels": []
+    }
+  ],
+  "workflows": [
+    {
+      "id": "rag-setup",
+      "name": "RAG Setup",
+      "schedule": "",
+      "enabled": false,
+      "targeting": {
+        "tags": ["planner"]
+      },
+      "executionMode": "automated",
+      "description": "Gather requirements, configure weave-cli, verify VDB health"
+    },
+    {
+      "id": "data-pipeline",
+      "name": "Data Pipeline",
+      "schedule": "",
+      "enabled": false,
+      "targeting": {
+        "tags": ["data"]
+      },
+      "executionMode": "automated",
+      "description": "Create collections, ingest documents in parallel batches, backup"
+    },
+    {
+      "id": "search-tuning",
+      "name": "Search Tuning",
+      "schedule": "",
+      "enabled": false,
+      "targeting": {
+        "tags": ["search"]
+      },
+      "executionMode": "automated",
+      "description": "Configure agents, test queries, compare search modes and embeddings"
+    },
+    {
+      "id": "eval-cycle",
+      "name": "Eval Cycle",
+      "schedule": "",
+      "enabled": false,
+      "targeting": {
+        "tags": ["eval"]
+      },
+      "executionMode": "automated",
+      "description": "Run baseline evals, benchmark agents, report results and recommendations"
+    },
+    {
+      "id": "deploy",
+      "name": "Deploy",
+      "schedule": "",
+      "enabled": false,
+      "targeting": {
+        "tags": ["ops"]
+      },
+      "executionMode": "automated",
+      "description": "Initialize stack, deploy to k8s/podman, verify health, set up monitoring"
+    },
+    {
+      "id": "daily-status",
+      "name": "Daily Status",
+      "schedule": "0 9 * * 1-5",
+      "enabled": true,
+      "targeting": {
+        "groups": ["Status"]
+      },
+      "executionMode": "automated",
+      "description": "Daily status check — each agent reports progress in their area"
+    }
+  ]
+}
